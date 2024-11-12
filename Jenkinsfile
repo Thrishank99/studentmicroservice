@@ -13,7 +13,6 @@ pipeline {
                     bat 'docker build -t thrishank99/student-microservice .'
                 }
             }
-        
         }
        stage('Push image to Hub'){
             steps{

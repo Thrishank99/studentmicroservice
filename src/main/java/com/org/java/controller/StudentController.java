@@ -36,8 +36,7 @@ public class StudentController {
 	@GetMapping("/findStudentToCollegeDetails")
 	public ResponseEntity<Student> findStudentToCollegeDetails(){
 		Object[] studentsList=studentService.getStudentToCollegeDetails();
-		return new ResponseEntity(studentsList,HttpStatus.OK);//http://localhost:8989/student/findStudentToCollegeDetails
-		
+		return new ResponseEntity(studentsList,HttpStatus.OK);//http://localhost:8989/student/findStudentToCollegeDetails	
 	}
 	@PostMapping("/saveStudentToCollege")
 	public ResponseEntity<Student> saveStudentToCollege(@RequestBody Student student){

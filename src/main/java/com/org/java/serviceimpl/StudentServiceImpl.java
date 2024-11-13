@@ -39,7 +39,7 @@ public class StudentServiceImpl implements StudentService {
 	public Object[] getStudentToCollegeDetails() {
 		// TODO Auto-generated method stub
 		//Object[] list=restTemplate.getForObject(ENDPOINT_URL, Object[].class);
-		Object[] list=restTemplate.getForObject("http://localhost:2024/college/findAll", Object[].class);
+		Object[] list=restTemplate.getForObject("http://localhost:8082/college/findAll", Object[].class);
 		return list;
 	}
 
